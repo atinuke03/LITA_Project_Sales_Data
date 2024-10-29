@@ -32,4 +32,7 @@ Pivot analysis is a powerful data analysis technique that allows users to summar
 
 # Data Visualization
 ![Total Sales by Region](https://github.com/user-attachments/assets/ab8c799a-74d9-4ae3-8783-d20aef091506)
+![Total Sales by Product](https://github.com/user-attachments/assets/c514376d-8c6c-4936-acd6-0eb236044a4b)
+![Total S![Top 5 Product by Total Sales](https://github.com/user-attachments/assets/d60abf6f-1bb4-4c7c-8a9e-1c1df6708d46)
+ales by Month](https://github.com/user-attachments/assets/3bcd0a25-eee8-42af-b8ed-21b50f094546)
 
