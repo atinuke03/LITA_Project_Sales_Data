@@ -21,7 +21,11 @@ The project performed an initial exploration which include
 - Total revenue by Region: The total revenue by region was calculated using =SUMIF(range,criteria [sum_range]) function.
 
 ## Pivot Analysis
-Pivot analysis is a powerful data analysis technique that allows users to summarize, reorganize, and analyze large datasets. The following data was summarized using pivot analysis;
+Pivot analysis is a powerful data analysis technique that allows users to summarize, reorganize, and analyze large datasets. The following metrics was summarized using pivot analysis;
+- Total sales by Region: This analysis summarizes the total sales figures for each geographical region (North, South, East, West).
+- Total Sales by product: This metric aggregates total sales for each product, providing a clear view of which products are driving revenue. 
+- Total Sales by Month: This analysis tracks total sales over time, organized by month.
+- Top 5 Product by Total Sales: This analysis highlights the five products with the highest total sales figures
 
 ## Other interesting report performed include
 - Grand Total Sales: This determined the overall sum of total sales using SUM function.
