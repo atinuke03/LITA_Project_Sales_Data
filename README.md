@@ -1,2 +1,2 @@
 # Sales Data Analysis Project
-This project collects and analyzes sales data from various regions. The goal of analyzing this dataset is to evaluate sales performance across different regions.
+This project collects and analyzes sales data from various regions.The goal is to provide insights into sales performance over different periods.By comparing revenue, businesses can identify which regions are thriving and which may require additional attention or resources. This analysis will not only highlight regional strengths but also reveal opportunities for improvement, enabling strategic decision-making.
