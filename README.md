@@ -1,2 +1,2 @@
-# LITA_Project
-This project aims to analyze data on marketing trends in the six-geopolitical zone to ensure business growth.
+# Sales Data Analysis Project
+This project collects and analyzes sales data from various regions. The goal of analyzing this dataset is to evaluate sales performance across different regions.
