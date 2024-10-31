@@ -38,12 +38,17 @@ Pivot analysis is a powerful data analysis technique that allows users to summar
 - AVERAGEIF(Table1[Product],C9908,Table1[TotalSales])
 
 # Data Visualization
+### Pivot Analysis for Sales Data
 ![Total Sales by Region](https://github.com/user-attachments/assets/ab8c799a-74d9-4ae3-8783-d20aef091506)
 ![Total Sales by Product](https://github.com/user-attachments/assets/c514376d-8c6c-4936-acd6-0eb236044a4b)
 ![Top 5 Product by Total Sales](https://github.com/user-attachments/assets/d60abf6f-1bb4-4c7c-8a9e-1c1df6708d46)
 ![Total Sales by Month](https://github.com/user-attachments/assets/3bcd0a25-eee8-42af-b8ed-21b50f094546)
+
+### Bar Chart diagram Showing Report for Sales Data
 ![Bar Chart for Sales Data 1](https://github.com/user-attachments/assets/3ea5be4a-be8c-48fa-8eca-f1c78d03b498)
 ![Bar Chart for Sales Data 2](https://github.com/user-attachments/assets/77472143-6cba-4958-920e-8cbe1c14bd96)
+
+### Bar Chart diagram Showing Report for Customer Data
 ![Bar Chart for Customer Data 1](https://github.com/user-attachments/assets/7e1e996c-d177-4c49-93f9-ba699cf135b1)
 ![Bar Chart for Customer Data 2](https://github.com/user-attachments/assets/1105239c-cccb-4c02-a27a-b2286b5d229b)
 
