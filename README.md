@@ -52,5 +52,89 @@ Pivot analysis is a powerful data analysis technique that allows users to summar
 Structured Query Language, is a standardized programming language used for managing and manipulating relational databases.
 SQL was used to analyze sales data. The following query was written to extract key insights. 
 
+```
+Select * from [dbo].[LITA Capstone]
+```
+ALTER TABLE [dbo].[LITA Capstone]
+ALTER COLUMN Quantity int
+```
+ALTER TABLE [dbo].[LITA Capstone]
+ALTER COLUMN UnitPrice int
+```
+
+DELETE from[dbo].[LITA Capstone]
+where Customer_Id is null
+
+DELETE from[dbo].[LITA Capstone]
+where OrderID is null
+
+DELETE from[dbo].[LITA Capstone]
+where Product is null
+
+DELETE from[dbo].[LITA Capstone]
+where Region is null
+
+DELETE from[dbo].[LITA Capstone]
+where OrderDate is null
+
+DELETE from[dbo].[LITA Capstone]
+where Quantity is null
+
+DELETE from[dbo].[LITA Capstone]
+where UnitPrice is null
+
+DELETE from[dbo].[LITA Capstone]
+where TotalSales is null
+
+........Total sales for each product category......
+Select Product, SUM(Quantity*UnitPrice) AS Total_Sales 
+		FROM [dbo].[LITA Capstone]
+		GROUP BY Product
+
+.......Number of sales transactions in each region.....
+Select Region, COUNT (*) AS [Sales Transaction]
+		FROM [dbo].[LITA Capstone]
+		GROUP BY Region
+
+.....Highest Selling Product by Total Sales Value.....
+Select Top 1(Product), SUM(Quantity*UnitPrice) AS [Total_Sales]   
+		FROM [dbo].[LITA Capstone]
+		GROUP BY Product
+		ORDER BY Total_Sales DESC
+
+......Total Revenue Per Product.....
+Select Product, SUM(Quantity*UnitPrice) AS Revenue
+		FROM [dbo].[LITA Capstone]
+		GROUP BY Product
+
+......Monthly sales totals for the current year.......
+Select Month (OrderDate) AS Sale_Month,
+		SUM (TotalSales) AS Monthly_Sales
+		FROM [dbo].[LITA Capstone]
+		WHERE Year(OrderDate) = 2024
+		GROUP BY Month(OrderDate)
+		ORDER BY Sale_Month
+
+.....Top 5 customers by total purchase amount......
+Select Top 5 Customer_Id,
+SUM(TotalSales) AS Total_Purchase
+FROM [dbo].[LITA Capstone]
+GROUP BY Customer_Id
+ORDER BY Total_Purchase DESC
+
+.......Percentage of total sales contributed by each region......
+Select Region,
+SUM(TotalSales) AS Region_Sales,
+(SUM(TotalSales) * 100.0 / (Select SUM(TotalSales) 
+FROM [dbo].[LITA Capstone])) AS Percentage_of_Total_Sales
+FROM [dbo].[LITA Capstone]
+GROUP BY Region
+
+.......Products with no sales in the last quarter.......
+Select Distinct p.Product
+FROM [dbo].[LITA Capstone] p
+LEFT JOIN [dbo].[LITA Capstone] s ON p.Product = s.Product
+AND DATEDIFF(DAY, s.OrderDate,GETDATE()) <=90 
+Where s.OrderID is NULL
 
 
