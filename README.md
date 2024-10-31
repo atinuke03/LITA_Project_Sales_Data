@@ -54,26 +54,22 @@ SQL was used to analyze sales data. The following query was written to extract k
 
 ```
 Select * from [dbo].[LITA Capstone]
-```
-```
+
 ALTER TABLE [dbo].[LITA Capstone]
 ALTER COLUMN Quantity int
-```
+
 ALTER TABLE [dbo].[LITA Capstone]
 ALTER COLUMN UnitPrice int
-```
-```
+
 DELETE from[dbo].[LITA Capstone]
 where Customer_Id is null
-```
-```
+
 DELETE from[dbo].[LITA Capstone]
 where OrderID is null
-```
-```
+
 DELETE from[dbo].[LITA Capstone]
 where Product is null
-```
+
 DELETE from[dbo].[LITA Capstone]
 where Region is null
 
@@ -139,5 +135,6 @@ FROM [dbo].[LITA Capstone] p
 LEFT JOIN [dbo].[LITA Capstone] s ON p.Product = s.Product
 AND DATEDIFF(DAY, s.OrderDate,GETDATE()) <=90 
 Where s.OrderID is NULL
+```
 
 
