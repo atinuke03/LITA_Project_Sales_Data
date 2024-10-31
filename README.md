@@ -33,7 +33,7 @@ Pivot analysis is a powerful data analysis technique that allows users to summar
 - Highest Sales: The highest sales of the overall total sales using MAX function.
 - Lowest sales: The lowest sales of the overall total sales using MIN function.
 - Total number of product: The total number of products uaing COUNTA function.
-# Formula Used
+## Formula Used
 - =Table1[[#Headers],[TotalSales]]
 - =AVERAGEIF(Table1[Product],C9908,Table1[TotalSales])
 
