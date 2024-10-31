@@ -48,5 +48,9 @@ Pivot analysis is a powerful data analysis technique that allows users to summar
 ![Bar Chart for Sales Data 1](https://github.com/user-attachments/assets/3ea5be4a-be8c-48fa-8eca-f1c78d03b498)
 ![Bar Chart for Sales Data 2](https://github.com/user-attachments/assets/77472143-6cba-4958-920e-8cbe1c14bd96)
 
+# Structured Query Language (SQL)
+Structured Query Language, is a standardized programming language used for managing and manipulating relational databases.
+SQL was used to analyze sales data. The following query was written to extract key insights. 
+
 
 
