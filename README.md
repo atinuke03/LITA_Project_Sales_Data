@@ -54,10 +54,11 @@ SQL was used to analyze sales data. The following query was written to extract k
 
 ```
 Select * from [dbo].[LITA Capstone]
-
+```
+```
 ALTER TABLE [dbo].[LITA Capstone]
 ALTER COLUMN Quantity int
-
+```
 ALTER TABLE [dbo].[LITA Capstone]
 ALTER COLUMN UnitPrice int
 
