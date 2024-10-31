@@ -62,16 +62,18 @@ ALTER COLUMN Quantity int
 ALTER TABLE [dbo].[LITA Capstone]
 ALTER COLUMN UnitPrice int
 ```
-
+```
 DELETE from[dbo].[LITA Capstone]
 where Customer_Id is null
-
+```
+```
 DELETE from[dbo].[LITA Capstone]
 where OrderID is null
-
+```
+```
 DELETE from[dbo].[LITA Capstone]
 where Product is null
-
+```
 DELETE from[dbo].[LITA Capstone]
 where Region is null
 
