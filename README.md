@@ -17,7 +17,7 @@ The data was cleaned by removing duplicates prior to data analysis. Data cleanin
 # Project Objectives
 The project performed an initial exploration which include
 - Total Sales: This the total sales for product sold.
-- Average Sales per product: The average sales per product was calculated using the AVERAGEIF(range,criteria [average_range]) function. 
+- Average Sales per product: The average sales is the average for each product category. 
 - Total revenue by Region: The total revenue by region was calculated using =SUMIF(range,criteria [sum_range]) function.
 
 ## Pivot Analysis
@@ -34,7 +34,8 @@ Pivot analysis is a powerful data analysis technique that allows users to summar
 - Lowest sales: The lowest sales of the overall total sales using MIN function.
 - Total number of product: The total number of products uaing COUNTA function.
 # Formula Used
-Total Sales = SUM(Quantity * Unit Price)
+=Table1[[#Headers],[TotalSales]]
+=AVERAGEIF(Table1[Product],C9908,Table1[TotalSales])
 
 # Data Visualization
 ![Total Sales by Region](https://github.com/user-attachments/assets/ab8c799a-74d9-4ae3-8783-d20aef091506)
