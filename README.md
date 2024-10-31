@@ -34,8 +34,8 @@ Pivot analysis is a powerful data analysis technique that allows users to summar
 - Lowest sales: The lowest sales of the overall total sales using MIN function.
 - Total number of product: The total number of products uaing COUNTA function.
 # Formula Used
-=Table1[[#Headers],[TotalSales]]
-=AVERAGEIF(Table1[Product],C9908,Table1[TotalSales])
+- =Table1[[#Headers],[TotalSales]]
+- =AVERAGEIF(Table1[Product],C9908,Table1[TotalSales])
 
 # Data Visualization
 ![Total Sales by Region](https://github.com/user-attachments/assets/ab8c799a-74d9-4ae3-8783-d20aef091506)
