@@ -177,7 +177,7 @@ Where s.OrderID is NULL
 ```
 # Power BI
 Powwr BI is a data visualization and business intelligence that converts data from different sources to interactive dashboards and business intelligence reports. The sales data was analyzed using power BI to generate key insights.
-# Dashboard showing insights found in excel and SQL, including sales overview, top-performing products, and regional breakdowns
+### Dashboard showing insights found in excel and SQL, including sales overview, top-performing products, and regional breakdowns
 ![SALES DATA VISUALS](https://github.com/user-attachments/assets/8d6557c5-61d1-43ed-8ec0-5d7488f11f79)
 
 
