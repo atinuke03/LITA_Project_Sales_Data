@@ -75,6 +75,8 @@ Pivot analysis is a powerful data analysis technique that allows users to summar
 =COUNTA(Table1[Product])
 ```
 # Data Visualization
+Data visualization is the graphical representation of information and data. By using visual elements like charts, graphs, maps, and infographics, data visualization tools and techniques help to make complex data more accessible, understandable, and usable. 
+
 ### Pivot Analysis for Sales Data
 ![Total Sales by Region](https://github.com/user-attachments/assets/ab8c799a-74d9-4ae3-8783-d20aef091506)
 ![Total Sales by Product](https://github.com/user-attachments/assets/c514376d-8c6c-4936-acd6-0eb236044a4b)
@@ -173,5 +175,10 @@ LEFT JOIN [dbo].[LITA Capstone] s ON p.Product = s.Product
 AND DATEDIFF(DAY, s.OrderDate,GETDATE()) <=90 
 Where s.OrderID is NULL
 ```
+# Power BI
+Powwr BI is a data visualization and business intelligence that converts data from different sources to interactive dashboards and business intelligence reports. The sales data was analyzed using power BI to generate key insights.
+# Dashboard showing insights found in excel and SQL, including sales overview, top-performing products, and regional breakdowns
+![SALES DATA VISUALS](https://github.com/user-attachments/assets/8d6557c5-61d1-43ed-8ec0-5d7488f11f79)
+
 
 
