@@ -45,7 +45,7 @@ Pivot analysis is a powerful data analysis technique that allows users to summar
 ![Total Sales by Month](https://github.com/user-attachments/assets/3bcd0a25-eee8-42af-b8ed-21b50f094546)
 
 ### Bar Chart diagram Showing Report for Sales Data
-![Bar Chart for Sales Data 1](https://github.com/user-attachments/assets/3ea5be4a-be8c-48fa-8eca-f1c78d03b498)
+
 ![Bar Chart for Sales Data 2](https://github.com/user-attachments/assets/77472143-6cba-4958-920e-8cbe1c14bd96)
 
 # Structured Query Language (SQL)
