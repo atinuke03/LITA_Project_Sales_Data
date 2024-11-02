@@ -38,26 +38,41 @@ Pivot analysis is a powerful data analysis technique that allows users to summar
 ```
 =SUM([@Quantity]*[@UnitPrice])
 ```
-### Average Sales per Product
+### Average Sales per Product (Gloves, Hat, Jacket, Shirt, Shoes, Socks)
 ```
-=AVERAGEIF(range,criteria,[average_range])
+=AVERAGEIF(Table1[Product],C7,Table1[TotalSales])
+=AVERAGEIF(Table1[Product],C9914,Table1[TotalSales])
+=AVERAGEIF(Table1[Product],C6,Table1[TotalSales])
+=AVERAGEIF(Table1[Product],C9911,Table1[TotalSales])
+=AVERAGEIF(Table1[Product],C9912,Table1[TotalSales])
+=AVERAGEIF(Table1[Product],C9905,Table1[TotalSales])
 ```
-### Total Revenue
+### Total Revenue per Region (North, South, East, West)
 ```
-=SUMIF(range,criteria,[sum_range])
+=SUMIF(Table1[Region],D9911,Table1[TotalSales])
+=SUMIF(Table1[Region],D9907,Table1[TotalSales])
+=SUMIF(Table1[Region],D9909,Table1[TotalSales])
+=SUMIF(Table1[Region],D9905,Table1[TotalSales])
 ```
 ### Grand Total Sales
 ```
-=SUM(number 1
+=SUM(Table1[TotalSales])
 ```
 ### Average Sales
 ```
+=AVERAGE(Table1[TotalSales])
 ```
 ### Highest Sales
 ```
+=MAX(Table1[TotalSales])
 ```
 ### Lowest Sales
 ```
+=MIN(Table1[TotalSales])
+```
+### Total Number of Product
+```
+=COUNTA(Table1[Product])
 ```
 # Data Visualization
 ### Pivot Analysis for Sales Data
