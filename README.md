@@ -34,13 +34,30 @@ Pivot analysis is a powerful data analysis technique that allows users to summar
 - Lowest sales: The lowest sales of the overall total sales using MIN function.
 - Total number of product: The total number of products uaing COUNTA function.
 ## Formula Used
--Total Sales
+### Total Sales
 ```
-=SUM(Quantity * Unit Price)
+=SUM([@Quantity]*[@UnitPrice])
 ```
--Average sales per product
+### Average Sales per Product
 ```
-=AVERAGEIF(range,criteria,[average range])
+=AVERAGEIF(range,criteria,[average_range])
+```
+### Total Revenue
+```
+=SUMIF(range,criteria,[sum_range])
+```
+### Grand Total Sales
+```
+=SUM(number 1
+```
+### Average Sales
+```
+```
+### Highest Sales
+```
+```
+### Lowest Sales
+```
 ```
 # Data Visualization
 ### Pivot Analysis for Sales Data
