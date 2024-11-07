@@ -187,5 +187,10 @@ Powwr BI is a data visualization and business intelligence that converts data fr
 
 ![SALES DATA](https://github.com/user-attachments/assets/37da086c-7f76-4c91-86e3-3b3ba51d1250)
 
+## Summary of Sales Data Analysis Dashboard
+- Region by Total Sales: The analysis of region total sales shows a sum total of 2,101,090 in the North, South, East and West.
+- Top 5 selling products: The top 5 selling product was achieved using filter. The result showed that Shoes has the highest sales with a total of 613380 followed by Shirt (485600), Hat 9316195), Gloves (296900) and Jacket (208230).
+- Average Total Sales: The average total sales was achieved using calculated measures. The result showed an average total sales of product to be 212.
+- 
 
 
