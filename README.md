@@ -194,12 +194,14 @@ Powwr BI is a data visualization and business intelligence that converts data fr
 
 - Average Total Sales: The average total sales was achieved using calculated measures. The result showed an average total sales of product to be 212.
 
-- Sum of Total sales by product: This was visualized using a pie chart. The slicer was tracked on the pie chart and result found was that:
+- Sum of Total sales by product: This was visualized using a pie chart. The slicer was tracked on the pie chart and result found include the following:
 1. Shoes: The highest product sales in the four regions is shoe with a total of 613380 (29%). However, Shoe was sold in the South, East and West, South reported the highest sales among the three regions with average total sales of 309.
 
 2. Shirt: Shirt was sold in North and East with the North sales ranking as the highest-248000 compared to East sales- 237,600. The overall average total sales of the shirt was reported to be 327.
-3. Hat: Hat was sold in the West, East and North. West has the highest sales of Hat- 174,300. The overall averagre total sales of Hat was 159.
-4. 
+3. Hat: Hat was sold in the West, East and North. West has the highest sales of Hat- 174,300. The overall average total sales of Hat was 159.
+4. Gloves: Gloves was sold in South and West region. However, South has the highest sale with a total of 247,600 compared to sales of Gloves in the West (49300). The overall average total sales was 200.
+5. Jacket: Jacket was sold in the North and East. The North has the highest sales of jacket-104,280 compared to East sales- 103,950. The overall average total sales was 140
+6. Socks: Socks reported sales in South and West region, with South ranking the highest sales- 133,920 compared to West- 46,865. The overall average total sales was reported to be 122.  
 
 
 
