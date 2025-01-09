@@ -95,18 +95,23 @@ SQL was used to analyze sales data. The following query was written to extract k
 
 ```
 Select * from [dbo].[LITA Capstone]
-
-........Total sales for each product category......
+```
+Total sales for each product category
+```
 Select Product, SUM(Quantity*UnitPrice) AS Total_Sales 
 		FROM [dbo].[LITA Capstone]
 		GROUP BY Product
+```
+![TOTAL SALES OF EACH PRODUCT](https://github.com/user-attachments/assets/abaf611e-d71b-429b-a994-7c0a63c2bf81)
 
-![TOTAL SALES OF EACH PRODUCT](https://github.com/user-attachments/assets/4af477fe-cffe-4450-b6c1-e370dee38892)
 
-.......Number of sales transactions in each region.....
+
+Number of sales transactions in each region
+```
 Select Region, COUNT (*) AS [Sales Transaction]
 		FROM [dbo].[LITA Capstone]
 		GROUP BY Region
+```
 
 .....Highest Selling Product by Total Sales Value.....
 Select Top 1(Product), SUM(Quantity*UnitPrice) AS [Total_Sales]   
@@ -133,7 +138,7 @@ SUM(TotalSales) AS Total_Purchase
 FROM [dbo].[LITA Capstone]
 GROUP BY Customer_Id
 ORDER BY Total_Purchase DESC
-
+```
 .......Percentage of total sales contributed by each region......
 Select Region,
 SUM(TotalSales) AS Region_Sales,
@@ -141,7 +146,8 @@ SUM(TotalSales) AS Region_Sales,
 FROM [dbo].[LITA Capstone])) AS Percentage_of_Total_Sales
 FROM [dbo].[LITA Capstone]
 GROUP BY Region
-
+```
+```
 .......Products with no sales in the last quarter.......
 Select Distinct p.Product
 FROM [dbo].[LITA Capstone] p
