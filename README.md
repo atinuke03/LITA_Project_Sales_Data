@@ -91,7 +91,7 @@ Data visualization is the graphical representation of information and data. By u
 
 # Structured Query Language (SQL)
 Structured Query Language, is a standardized programming language used for managing and manipulating relational databases.
-SQL was used to analyze sales data. The following query was written to extract key insights. 
+SQL was used to analyzed sales data. The following query was written to extract key insights. 
 
 ```
 Select * from [dbo].[LITA Capstone]
@@ -105,12 +105,13 @@ Select Product, SUM(Quantity*UnitPrice) AS Total_Sales
 ![TOTAL SALES OF EACH PRODUCT](https://github.com/user-attachments/assets/abaf611e-d71b-429b-a994-7c0a63c2bf81)
 
 
-### Number of sales transactions in each region
+### Sales transactions in each region
 ```
 Select Region, COUNT (*) AS [Sales Transaction]
 		FROM [dbo].[LITA Capstone]
 		GROUP BY Region
 ```
+![NUMBER OF SALES TRANSACTION IN EACH REGION](https://github.com/user-attachments/assets/b5b954ac-52b7-4848-9546-b01b4d72287f)
 
 ### Highest Selling Product by Total Sales Value
 ```
@@ -119,6 +120,7 @@ Select Top 1(Product), SUM(Quantity*UnitPrice) AS [Total_Sales]
 		GROUP BY Product
 		ORDER BY Total_Sales DESC
 ```
+![HIGHEST SELLING PRODUCT BYTOTAL SALES](https://github.com/user-attachments/assets/fa4c2789-43a4-482f-be92-ba4ca7b27ae6)
 
 ### Total Revenue Per Product
 ```
@@ -126,6 +128,8 @@ Select Product, SUM(Quantity*UnitPrice) AS Revenue
 		FROM [dbo].[LITA Capstone]
 		GROUP BY Product
 ```
+![TOTAL REVENUE BY PRODUCT](https://github.com/user-attachments/assets/f71c68cd-58ab-4577-a9b6-9e95b5ae7ab8)
+
 ### Monthly sales totals for the current year
 ```
 Select Month (OrderDate) AS Sale_Month,
@@ -135,6 +139,7 @@ Select Month (OrderDate) AS Sale_Month,
 		GROUP BY Month(OrderDate)
 		ORDER BY Sale_Month
 ```
+![CURRENT YEAR MONTHLY SALES TOTAL](https://github.com/user-attachments/assets/187bfd80-85fc-4c3c-a4ed-7d8dcdefc768)
 
 ### Top 5 customers by total purchase amount
 ```
@@ -144,6 +149,8 @@ FROM [dbo].[LITA Capstone]
 GROUP BY Customer_Id
 ORDER BY Total_Purchase DESC
 ```
+![TOP 5 CUSTOMERS BY TOTAL PURCHASE](https://github.com/user-attachments/assets/76318693-0bc7-4976-ab0b-862f90b5edc3)
+
 ### Percentage of total sales contributed by each region
 ```
 Select Region,
@@ -153,6 +160,8 @@ FROM [dbo].[LITA Capstone])) AS Percentage_of_Total_Sales
 FROM [dbo].[LITA Capstone]
 GROUP BY Region
 ```
+![% TOTAL SALES OF EACH REGION](https://github.com/user-attachments/assets/58be1bfc-70ce-4b7a-a21a-a4f711486b8d)
+
 ### Products with no sales in the last quarter
 ```
 Select Distinct p.Product
@@ -161,6 +170,8 @@ LEFT JOIN [dbo].[LITA Capstone] s ON p.Product = s.Product
 AND DATEDIFF(DAY, s.OrderDate,GETDATE()) <=90 
 Where s.OrderID is NULL
 ```
+![PRODUCT WITH NO SALES IN LAST QT](https://github.com/user-attachments/assets/3c8a57c7-21af-4682-86df-2a37b6b0c54c)
+
 # Power BI
 Powwr BI is a data visualization and business intelligence that converts data from different sources to interactive dashboards and business intelligence reports. The sales data was analyzed using power BI to generate key insights.
 ### Dashboard showing insights found in Excel and SQL, including sales overview, top-performing products, and regional breakdowns.
