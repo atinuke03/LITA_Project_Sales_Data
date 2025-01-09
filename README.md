@@ -111,8 +111,9 @@ Select Region, COUNT (*) AS [Sales Transaction]
 		FROM [dbo].[LITA Capstone]
 		GROUP BY Region
 ```
-```
+
 ### Highest Selling Product by Total Sales Value
+```
 Select Top 1(Product), SUM(Quantity*UnitPrice) AS [Total_Sales]   
 		FROM [dbo].[LITA Capstone]
 		GROUP BY Product
@@ -135,14 +136,16 @@ Select Month (OrderDate) AS Sale_Month,
 		ORDER BY Sale_Month
 ```
 
-```Top 5 customers by total purchase amount
+### Top 5 customers by total purchase amount
+```
 Select Top 5 Customer_Id,
 SUM(TotalSales) AS Total_Purchase
 FROM [dbo].[LITA Capstone]
 GROUP BY Customer_Id
-```ORDER BY Total_Purchase DESC
-
-.......Percentage of total sales contributed by each region......
+ORDER BY Total_Purchase DESC
+```
+### Percentage of total sales contributed by each region
+```
 Select Region,
 SUM(TotalSales) AS Region_Sales,
 (SUM(TotalSales) * 100.0 / (Select SUM(TotalSales) 
@@ -150,8 +153,8 @@ FROM [dbo].[LITA Capstone])) AS Percentage_of_Total_Sales
 FROM [dbo].[LITA Capstone]
 GROUP BY Region
 ```
+### Products with no sales in the last quarter
 ```
-.......Products with no sales in the last quarter.......
 Select Distinct p.Product
 FROM [dbo].[LITA Capstone] p
 LEFT JOIN [dbo].[LITA Capstone] s ON p.Product = s.Product
