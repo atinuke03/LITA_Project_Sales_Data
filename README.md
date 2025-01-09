@@ -96,7 +96,7 @@ SQL was used to analyze sales data. The following query was written to extract k
 ```
 Select * from [dbo].[LITA Capstone]
 ```
-Total sales for each product category
+### Total sales for each product category
 ```
 Select Product, SUM(Quantity*UnitPrice) AS Total_Sales 
 		FROM [dbo].[LITA Capstone]
@@ -105,40 +105,43 @@ Select Product, SUM(Quantity*UnitPrice) AS Total_Sales
 ![TOTAL SALES OF EACH PRODUCT](https://github.com/user-attachments/assets/abaf611e-d71b-429b-a994-7c0a63c2bf81)
 
 
-
-Number of sales transactions in each region
+### Number of sales transactions in each region
 ```
 Select Region, COUNT (*) AS [Sales Transaction]
 		FROM [dbo].[LITA Capstone]
 		GROUP BY Region
 ```
-
-.....Highest Selling Product by Total Sales Value.....
+```
+### Highest Selling Product by Total Sales Value
 Select Top 1(Product), SUM(Quantity*UnitPrice) AS [Total_Sales]   
 		FROM [dbo].[LITA Capstone]
 		GROUP BY Product
 		ORDER BY Total_Sales DESC
+```
 
-......Total Revenue Per Product.....
+### Total Revenue Per Product
+```
 Select Product, SUM(Quantity*UnitPrice) AS Revenue
 		FROM [dbo].[LITA Capstone]
 		GROUP BY Product
-
-......Monthly sales totals for the current year.......
+```
+### Monthly sales totals for the current year
+```
 Select Month (OrderDate) AS Sale_Month,
 		SUM (TotalSales) AS Monthly_Sales
 		FROM [dbo].[LITA Capstone]
 		WHERE Year(OrderDate) = 2024
 		GROUP BY Month(OrderDate)
 		ORDER BY Sale_Month
+```
 
-.....Top 5 customers by total purchase amount......
+```Top 5 customers by total purchase amount
 Select Top 5 Customer_Id,
 SUM(TotalSales) AS Total_Purchase
 FROM [dbo].[LITA Capstone]
 GROUP BY Customer_Id
-ORDER BY Total_Purchase DESC
-```
+```ORDER BY Total_Purchase DESC
+
 .......Percentage of total sales contributed by each region......
 Select Region,
 SUM(TotalSales) AS Region_Sales,
