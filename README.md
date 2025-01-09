@@ -96,40 +96,12 @@ SQL was used to analyze sales data. The following query was written to extract k
 ```
 Select * from [dbo].[LITA Capstone]
 
-ALTER TABLE [dbo].[LITA Capstone]
-ALTER COLUMN Quantity int
-
-ALTER TABLE [dbo].[LITA Capstone]
-ALTER COLUMN UnitPrice int
-
-DELETE from[dbo].[LITA Capstone]
-where Customer_Id is null
-
-DELETE from[dbo].[LITA Capstone]
-where OrderID is null
-
-DELETE from[dbo].[LITA Capstone]
-where Product is null
-
-DELETE from[dbo].[LITA Capstone]
-where Region is null
-
-DELETE from[dbo].[LITA Capstone]
-where OrderDate is null
-
-DELETE from[dbo].[LITA Capstone]
-where Quantity is null
-
-DELETE from[dbo].[LITA Capstone]
-where UnitPrice is null
-
-DELETE from[dbo].[LITA Capstone]
-where TotalSales is null
-
 ........Total sales for each product category......
 Select Product, SUM(Quantity*UnitPrice) AS Total_Sales 
 		FROM [dbo].[LITA Capstone]
 		GROUP BY Product
+
+![TOTAL SALES OF EACH PRODUCT](https://github.com/user-attachments/assets/4af477fe-cffe-4450-b6c1-e370dee38892)
 
 .......Number of sales transactions in each region.....
 Select Region, COUNT (*) AS [Sales Transaction]
