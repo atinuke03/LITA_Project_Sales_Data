@@ -1,10 +1,27 @@
 # Project Title: Sales Data Project
 
+[Project Overview](#project-overview)
+
+[Data Structure](#data-structure)
+
+[Data Cleaning](#data-cleaning)
+
+[Project Objectives](#project-objectives)
+
+[Pivot Analysis](#pivot-analysis)
+
+[Other Report](#other-report)
+
+[Formula Used](#formula-used)
+
+[Data Visualization](#data-visualization)
+
+[Data Analysis Dashboard](#data-analysis-dashboard)
+
 # Project Overview
 This project collects and analyzes sales data from a retail store from various regions. The goal is to uncover key insights such as top-selling products, regional performance, and monthly sales trends using pivot analysis. By calculating metrics suh as total sales by product,region e.t.c, businesses can identify which regions are thriving and which may require additional attention or resources. This analysis will not only highlight regional strengths but also reveal opportunities for improvement, enabling strategic decision-making.
 
-# Data Collected
-## Data Structure
+# Data Structure
 The dataset includes the following key columns:
 1. Product: The name or type of product sold.
 2. Region: The geographical area where the sale operates (North, South, East, West).
@@ -29,12 +46,13 @@ Pivot analysis is a powerful data analysis technique that allows users to summar
 - Total Sales by Month: This analysis tracks total sales over time, organized by month.
 - Top 5 Product by Total Sales: This analysis highlights the five products with the highest total sales figures
 
-## Other interesting report performed include
+## Other Report
 - Grand Total Sales: This determined the overall sum of total sales using SUM function.
 - Average sales: The average sales of the overall total sales using AVERAGE function.
 - Highest Sales: The highest sales of the overall total sales using MAX function.
 - Lowest sales: The lowest sales of the overall total sales using MIN function.
 - Total number of product: The total number of products using COUNTA function.
+
 ## Formula Used
 ### Total Sales
 ```
@@ -180,7 +198,7 @@ Powwr BI is a data visualization and business intelligence that converts data fr
 
 ![SALES DATA](https://github.com/user-attachments/assets/37da086c-7f76-4c91-86e3-3b3ba51d1250)
 
-## Summary of Sales Data Analysis Dashboard
+## Data Analysis Dashboard
 - Region by Total Sales: The analysis of region total sales shows a sum total of 2,101,090 in the North, South, East and West.
 
 - Top 5 selling products: The top 5 selling product was achieved using filter. The result showed that Shoes has the highest sales with a total of 613,380 followed by Shirt (485,600), Hat (316195), Gloves (296900) and Jacket (208230) respectively.
