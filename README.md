@@ -16,7 +16,9 @@
 
 [Data Visualization](#data-visualization)
 
-[Data Analysis Dashboard](#data-analysis-dashboard)
+[Sales Analysis Dashboard](#sales-analysis-dashboard)
+
+[Sales Analysis Summary](#sales-analysis-summary)
 
 # Project Overview
 This project collects and analyzes sales data from a retail store from various regions. The goal is to uncover key insights such as top-selling products, regional performance, and monthly sales trends using pivot analysis. By calculating metrics suh as total sales by product,region e.t.c, businesses can identify which regions are thriving and which may require additional attention or resources. This analysis will not only highlight regional strengths but also reveal opportunities for improvement, enabling strategic decision-making.
@@ -192,13 +194,14 @@ Where s.OrderID is NULL
 
 # Power BI
 Powwr BI is a data visualization and business intelligence that converts data from different sources to interactive dashboards and business intelligence reports. The sales data was analyzed using power BI to generate key insights.
-### Dashboard showing insights found in Excel and SQL, including sales overview, top-performing products, and regional breakdowns.
+
+### Sales Analysis Dashboard 
 
 ![Sales Data Analysis](https://github.com/user-attachments/assets/ba38019f-3398-432b-ad38-84674143a8ce)
 
 ![SALES DATA](https://github.com/user-attachments/assets/37da086c-7f76-4c91-86e3-3b3ba51d1250)
 
-## Data Analysis Dashboard
+## Sales Analysis Summary
 - Region by Total Sales: The analysis of region total sales shows a sum total of 2,101,090 in the North, South, East and West.
 
 - Top 5 selling products: The top 5 selling product was achieved using filter. The result showed that Shoes has the highest sales with a total of 613,380 followed by Shirt (485,600), Hat (316195), Gloves (296900) and Jacket (208230) respectively.
